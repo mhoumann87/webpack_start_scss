@@ -1,4 +1,4 @@
-import './style.css';
+import './style.scss';
 
 const headLine = 'Welcome to the webpage';
 
