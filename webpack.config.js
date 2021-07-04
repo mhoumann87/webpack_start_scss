@@ -1,3 +1,6 @@
+// Import plugins
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 // Function to set mode for production or development
 const mode = process.env.NODE_ENV === 'production'
 ? 'production'
@@ -5,12 +8,13 @@ const mode = process.env.NODE_ENV === 'production'
 
 module.exports = {
   mode: mode,
+  plugins: [new MiniCssExtractPlugin()],
   module: {
     rules: [
       {
         // Set up to test for sass, scss and css files
         test: /\.(s[ac]|c)ss$/i,
-        use: ['style-loader', 'css-loader', 'sass-loader']
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
       }
     ]
   },
