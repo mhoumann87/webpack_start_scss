@@ -1,7 +1,7 @@
 {
   "name": "webpack_start_scss",
-  "version": "1.0.0",
-  "description": "Creating a webpack project with SCSS",
+  "version": "0.1.0",
+  "description": "Starter files for creating a webpack project with dart-sass",
   "main": "index.js",
   "repository": "git@github.com:mhoumann87/webpack_start_scss.git",
   "author": "Michael Houmann <mhoumann87@gmail.com>",
@@ -21,5 +21,10 @@
   "scripts": {
     "start": "webpack serve",
     "build": "NODE_ENV=production webpack"
-  }
+  },
+  "keywords": [
+    "webpack",
+    "dart-sass",
+    "postCSS"
+  ]
 }
